@@ -1,0 +1,6 @@
+<mapper namespace="com.llye.apache.apachecamel.mapper.BookMapper">
+    <insert id="insertBook" parameterType="com.llye.apache.apachecamel.model.Book">
+        INSERT INTO book (title, author, genre, published_year)
+        VALUES (#{title}, #{author}, #{genre}, #{publishedYear})
+    </insert>
+</mapper>
