@@ -29,7 +29,13 @@ The H2 database is automatically initialized and used by the application for dat
    ```
 ## Access the ActiveMQ Admin Console
 
-After the installation, access the ActiveMQ admin console at http://localhost:8161
+After the Apache ActiveMQ installation and starting the service, you can access the ActiveMQ admin console using a web browser:
+
+- URL: [http://localhost:8161](http://localhost:8161)
+- Username: `admin`
+- Password: `admin`
+
+This admin console allows you to monitor and manage your ActiveMQ broker.
 
 ![ActiveMQ admin console](image/activemq-admin-console.png)
 
