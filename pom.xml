@@ -18,13 +18,13 @@
 		<java.version>17</java.version>
 		<camel-spring-boot-starter.version>4.0.0-RC2</camel-spring-boot-starter.version>
 		<camel-activemq.version>4.0.0-RC2</camel-activemq.version>
+		<camel-jackson.version>4.0.0-RC2</camel-jackson.version>
+		<camel-jacksonxml.version>4.0.0-RC2</camel-jacksonxml.version>
 		<activemq-broker.version>5.18.2</activemq-broker.version>
 		<mybatis.version>3.5.13</mybatis.version>
 		<mybatis-spring.version>3.0.1</mybatis-spring.version>
 		<h2.version>2.2.220</h2.version>
 		<lombok.version>1.18.28</lombok.version>
-		<json.version>20230618</json.version>
-		<jackson-dataformat-xml.version>2.15.2</jackson-dataformat-xml.version>
 	</properties>
 
 	<dependencies>
@@ -45,6 +45,16 @@
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-activemq</artifactId>
 			<version>${camel-activemq.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jackson</artifactId>
+			<version>${camel-jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jacksonxml</artifactId>
+			<version>${camel-jacksonxml.version}</version>
 		</dependency>
 
 		<!-- ActiveMQ -->
@@ -93,17 +103,6 @@
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
 			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>${json.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-			<version>${jackson-dataformat-xml.version}</version>
 		</dependency>
 	</dependencies>
 
